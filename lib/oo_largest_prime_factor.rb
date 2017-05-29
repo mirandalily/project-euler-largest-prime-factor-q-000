@@ -1,13 +1,12 @@
 # Enter your object-oriented solution here!
 class LargestPrimeFactor
-  attr_reader :number
 
   def initialize(number)
     @number = number
   end
 
-  def largest_prime_number
-    prime_factors = []
+  def number
+    prime_factors = Array.new
     divisor = 2
     while (@number > 1)
       while (@number % divisor == 0)
